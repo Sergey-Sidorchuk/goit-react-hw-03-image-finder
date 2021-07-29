@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GalleryImageItem  = ({ alt, src, url, onClick }) => (
-  <li className="GalleryImageItem">
+const ImageGalleryItem  = ({ alt, src, url, onClick }) => (
+  <li className="ImageGalleryItem">
     <img
       onClick={onClick}
       src={src}
       alt={alt}
-      className="GalleryImageItem-image"
+      className="ImageGalleryItem-image"
       url={url}
     />
   </li>
 );
-GalleryImageItem.propTypes = {
+ImageGalleryItem.propTypes = {
   onClick: PropTypes.func.isRequired,
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };
-export default GalleryImageItem;
+export default ImageGalleryItem;
