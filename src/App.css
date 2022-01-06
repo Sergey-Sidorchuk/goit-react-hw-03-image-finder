@@ -40,6 +40,8 @@ img {
  * Стили компонента Searchbar
  */
 .Searchbar {
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   position: sticky;
